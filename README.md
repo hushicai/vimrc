@@ -13,6 +13,12 @@ sh ~/.vim_runtime/install.sh
 sh ~/.vim_runtime/uninstall.sh
 ```
 
+## clean
+
+```bash
+rm -rf ~/.vim_runtime
+```
+
 ## update
 
 ```bash
