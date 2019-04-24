@@ -110,13 +110,6 @@ if $COLORTERM == 'gnome-terminal'
     set t_Co=256
 endif
 
-try
-    colorscheme desert
-catch
-endtry
-
-set background=dark
-
 " Set extra options when running in GUI mode
 if has("gui_running")
     set guioptions-=T
@@ -255,19 +248,6 @@ if has("mac") || has("macunix")
   nmap <D-k> <M-k>
   vmap <D-j> <M-j>
   vmap <D-k> <M-k>
-endif
-
-" Delete trailing white space on save, useful for some filetypes ;)
-fun! CleanExtraSpaces()
-    let save_cursor = getpos(".")
-    let old_query = getreg('/')
-    silent! %s/\s\+$//e
-    call setpos('.', save_cursor)
-    call setreg('/', old_query)
-endfun
-
-if has("autocmd")
-    autocmd BufWritePre *.txt,*.js,*.py,*.wiki,*.sh,*.coffee :call CleanExtraSpaces()
 endif
 
 
