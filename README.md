@@ -12,3 +12,10 @@ sh ~/.vim_runtime/install.sh
 ```bash
 sh ~/.vim_runtime/uninstall.sh
 ```
+
+## update
+
+```bash
+cd ~/.vim_runtime
+git pull --rebase
+```
