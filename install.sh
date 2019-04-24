@@ -10,7 +10,10 @@ source ~/.vim_runtime/config/filetypes.vim
 source ~/.vim_runtime/config/plugins.vim
 ' > ~/.vimrc
 
-mkdir -p ~/.config/nvim
+mkdir -p ~/.vim/autoload
+mkdir -p ~/.config/nvim/autoload
+cp -rf ./autoload/plug.vim ~/.config/nvim/autoload/plug.vim
+cp -rf ./autoload/plug.vim ~/.vim/autoload/plug.vim
 cp -f ~/.vimrc ~/.config/nvim/init.vim
 
-echo "Installed the Vim configuration successfully! Enjoy :-)"
+echo "Installed the Vim configuration successfully!"
