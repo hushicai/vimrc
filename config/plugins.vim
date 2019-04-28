@@ -10,7 +10,7 @@ call plug#begin('~/.plugged')
 
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer', 'for': ['c', 'cpp', 'objc'] }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer', 'for': ['c', 'cpp'] }
 
 call plug#end()
 
@@ -53,5 +53,5 @@ set completeopt=menu,menuone
 noremap <c-z> <NOP>
 
 let g:ycm_semantic_triggers =  {
-			\ 'c,cpp,objc': ['re!\w{2}'],
+			\ 'c,cpp': ['re!\w{2}'],
 			\ }
