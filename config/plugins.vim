@@ -1,11 +1,5 @@
 " plugins
 
-if has('nvim')
-    let plug_path = expand('~/.nvim/bundle')
-else
-    let plug_path = expand('~/.vim/bundle')
-endif
-
 call plug#begin('~/.plugged')
 
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
