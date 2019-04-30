@@ -10,6 +10,8 @@ Plug 'mbbill/undotree'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -61,10 +63,10 @@ set completeopt=menu,menuone
 
 noremap <c-z> <NOP>
 
-let g:ycm_semantic_triggers =  {
-			\ 'c,cpp': ['re!\w{2}'],
-			\ 'javascript': ['re!\w{2}'],
-			\ }
+let g:ycm_semantic_triggers = {
+            \ 'c,cpp': ['re!\w{2}'],
+            \ 'javascript': ['re!\w{2}'],
+            \ }
 
 let g:ycm_filepath_blacklist = {
             \ 'txt': 1
