@@ -2,7 +2,6 @@
 set -e
 
 rm -f ~/.vimrc
-rm -rf ~/.config/nvim/autoload
-rm -rf ~/.vim/autoload
+rm -f ~/.config/nvim/init.vim
 
 echo "Removed the Vim configuration successfully!"
