@@ -5,6 +5,7 @@ call plug#begin('~/.plugged')
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer', 'for': ['c', 'cpp'] }
+Plug expand('<sfile>:p:h:h').'/my_plugins/ycm', { 'for': ['c', 'cpp'] }
 
 call plug#end()
 
