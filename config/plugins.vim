@@ -9,6 +9,7 @@ Plug expand('<sfile>:p:h:h').'/my_plugins/ycm', { 'for': ['c', 'cpp'] }
 Plug 'mbbill/undotree'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'editorconfig/editorconfig-vim'
 call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
