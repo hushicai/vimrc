@@ -4,7 +4,7 @@ call plug#begin('~/.plugged')
 
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer', 'for': ['c', 'cpp'] }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --ts-completer' }
 Plug expand('<sfile>:p:h:h').'/my_plugins/ycm', { 'for': ['c', 'cpp'] }
 Plug 'mbbill/undotree'
 
@@ -40,7 +40,7 @@ map <leader>j :CtrlP<cr>
 let g:ycm_add_preview_to_completeopt = 0
 let g:ycm_show_diagnostics_ui = 0
 let g:ycm_server_log_level = 'info'
-let g:ycm_min_num_identifier_candidate_chars = 2
+let g:ycm_min_num_identifier_candidate_chars = 3
 let g:ycm_collect_identifiers_from_comments_and_strings = 1
 let g:ycm_complete_in_strings=1
 let g:ycm_key_invoke_completion = '<c-z>'
@@ -50,4 +50,9 @@ noremap <c-z> <NOP>
 
 let g:ycm_semantic_triggers =  {
 			\ 'c,cpp': ['re!\w{2}'],
+			\ 'javascript': ['re!\w{2}'],
 			\ }
+
+let g:ycm_filepath_blacklist = {
+            \ 'txt': 1
+            \}
