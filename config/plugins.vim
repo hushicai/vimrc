@@ -7,6 +7,8 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --ts-completer' }
 Plug expand('<sfile>:p:h:h').'/my_plugins/ycm', { 'for': ['c', 'cpp'] }
 Plug 'mbbill/undotree'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -66,3 +68,12 @@ let g:ycm_semantic_triggers =  {
 let g:ycm_filepath_blacklist = {
             \ 'txt': 1
             \}
+
+"""""""""""""""""""""""""""
+"  => UltiSnips           "
+"""""""""""""""""""""""""""
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-l>"
+let g:UltiSnipsJumpBackwardTrigger="<c-h>"
+let g:snips_author = 'Shicai Hu'
+let g:snips_author_email = 'bluthcy@gmail.com'
