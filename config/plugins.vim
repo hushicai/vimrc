@@ -5,7 +5,6 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --ts-completer' }
-Plug expand('<sfile>:p:h:h').'/my_plugins/ycm', { 'for': ['c', 'cpp'] }
 Plug 'mbbill/undotree'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
