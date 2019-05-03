@@ -26,13 +26,6 @@ cd ~/.vim_runtime
 git pull --rebase
 ```
 
-## update vim-plug
-
-```bash
-curl -fLo ./autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-```
-
 ## references
 
 * [vim-galore](https://github.com/mhinz/vim-galore)
