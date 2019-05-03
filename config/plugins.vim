@@ -63,17 +63,12 @@ let g:ycm_server_log_level = 'info'
 let g:ycm_min_num_identifier_candidate_chars = 3
 let g:ycm_collect_identifiers_from_comments_and_strings = 1
 let g:ycm_complete_in_strings = 1
-let g:ycm_key_invoke_completion = '<c-z>'
 let g:ycm_confirm_extra_conf = 0
 set completeopt=menu,menuone
-
-noremap <c-z> <NOP>
-
 let g:ycm_semantic_triggers = {
             \ 'c,cpp': ['re!\w{2}'],
             \ 'javascript': ['re!\w{2}'],
             \ }
-
 let g:ycm_filepath_blacklist = {
             \ 'txt': 1
             \}
