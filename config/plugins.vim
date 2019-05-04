@@ -73,6 +73,7 @@ let g:ycm_semantic_triggers = {
 let g:ycm_filepath_blacklist = {
             \ 'txt': 1
             \}
+let g:ycm_global_ycm_extra_conf = expand('<sfile>:p:h:h').'/ycm_extra_conf.py'
 
 """""""""""""""""""""""""""
 "  => UltiSnips           "
