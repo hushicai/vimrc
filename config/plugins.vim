@@ -58,7 +58,7 @@ map <leader>j :CtrlP<cr>
 """"""""""""""""""""""""""""""
 " https://zhuanlan.zhihu.com/p/33046090
 let g:ycm_add_preview_to_completeopt = 0
-let g:ycm_show_diagnostics_ui = 0
+" let g:ycm_show_diagnostics_ui = 0
 let g:ycm_server_log_level = 'info'
 let g:ycm_min_num_identifier_candidate_chars = 3
 let g:ycm_collect_identifiers_from_comments_and_strings = 1
