@@ -1,5 +1,14 @@
 # vimrc
 
+## prepare
+
+First, prepare [fzf](https://github.com/junegunn/fzf) and [riggrep](https://github.com/BurntSushi/ripgrep), so we use [fzf.vim](https://github.com/junegunn/fzf.vim) out of box.
+
+```bash
+brew install fzf
+brew install ripgrep
+```
+
 ## install
 
 ```bash
