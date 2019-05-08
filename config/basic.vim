@@ -285,3 +285,6 @@ noremap <Leader>ss :source $MYVIMRC<cr>
 
 " Quick <ESC>
 inoremap jk <ESC>
+
+" clear last search highlight
+nnoremap <leader><space> :nohlsearch<CR>
