@@ -5,7 +5,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'scrooloose/nerdcommenter'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer', 'for': ['c', 'cpp'] }
+" Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer', 'for': ['c', 'cpp'] }
 Plug 'mbbill/undotree'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
@@ -59,17 +59,17 @@ map <leader>j :CtrlP<cr>
 """"""""""""""""""""""""""""""
 " => YouCompleteMe
 """"""""""""""""""""""""""""""
-let g:ycm_add_preview_to_completeopt = 0
-let g:ycm_server_log_level = 'info'
-let g:ycm_min_num_identifier_candidate_chars = 2
-let g:ycm_collect_identifiers_from_comments_and_strings = 1
-let g:ycm_complete_in_strings = 1
-let g:ycm_confirm_extra_conf = 0
-set completeopt=menu,menuone
-let g:ycm_semantic_triggers = {
-            \ 'c,cpp': ['re!\w{4}']
-            \ }
-let g:ycm_global_ycm_extra_conf = expand('<sfile>:p:h:h').'/ycm_extra_conf.py'
+" let g:ycm_add_preview_to_completeopt = 0
+" let g:ycm_server_log_level = 'info'
+" let g:ycm_min_num_identifier_candidate_chars = 2
+" let g:ycm_collect_identifiers_from_comments_and_strings = 1
+" let g:ycm_complete_in_strings = 1
+" let g:ycm_confirm_extra_conf = 0
+" set completeopt=menu,menuone
+" let g:ycm_semantic_triggers = {
+            " \ 'c,cpp': ['re!\w{4}']
+            " \ }
+" let g:ycm_global_ycm_extra_conf = expand('<sfile>:p:h:h').'/ycm_extra_conf.py'
 
 """""""""""""""""""""""""""
 "  => UltiSnips           "
